@@ -1,0 +1,2 @@
+complexitatea e linear ( O(n) ).
+Prima data citim in 2 vectori valoriile din file, salvand doar cei care sunt pari, dupa asta interclasam cele 2 vectori, tinand cont de cele 3 posibilitati v1[i] > v2[j], v1[i] < v2[j], v1[i] == v2[j].

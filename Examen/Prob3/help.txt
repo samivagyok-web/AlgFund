@@ -1,0 +1,16 @@
+Citirea din file:
+
+- Citim liniile intr-un string array folosind Split la new line - lungimea arrayului va fii n.
+- Ne uitam la lungimea unui linii - asta va m, scadam unu fiindca a mai ramas /r la sfarsitul liniilor
+- Bagam totul intr-un int[,]
+
+Preparing the solution:
+
+- La margini adaugam 0, ca sa nu avem probleme cand ne uitam la vecini la valori care ar avea i = 0, j = 0, i = length - 1, j = length - 1.
+
+Solution:
+
+- Initializam un bool[,] care va "tine minte" la care valori ne-am uitat deja, cand cautam aglomeraliile.
+- Traversam matricea, cand gasim o valoare nenula intram in FindNumbers()
+- Asta-i o functie recursiva care va cauta veciniile, si daca gaseste, veciniile al vecinului gasit... asa mai departe
+- Returnam un vector de frecventa cate aglomerari am gasit.
